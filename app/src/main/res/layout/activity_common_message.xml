@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#3F51B5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="常用短语"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/btn_add_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_add_circle_outline_white_24dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入短信内容"
+            android:lines="3"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="top"
+            android:background="@drawable/input_box"
+            android:id="@+id/id_edit_message"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="确定"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/id_sure"/>
+    </LinearLayout>
+    <android.support.v7.widget.ListViewCompat
+        android:id="@+id/common_message_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:divider="@color/white"
+        android:dividerHeight="2px">
+    </android.support.v7.widget.ListViewCompat>
+</LinearLayout>

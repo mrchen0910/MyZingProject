@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#3F51B5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="意见反馈"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+    <EditText
+        android:hint="请输入您的意见或建议，我们将不断为您改进。"
+        android:textColorHint="#DCDCDC"
+        android:id="@+id/write_signature_or_skill"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="top"
+        android:padding="10dp"
+        android:maxEms="10"
+        android:minEms="10"
+        android:textSize="14sp"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"/>
+
+    <TextView
+        android:text="请留下您的联系方式方便我们与您联系"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="手机号"
+        android:textColorHint="#DCDCDC"
+        android:id="@+id/ed_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/white" />
+
+    <Button
+        android:id="@+id/btn_feedback"
+        android:layout_marginTop="20dp"
+        android:text="提交"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_blue_selector"
+        android:layout_height="44dp" />
+
+</LinearLayout>
